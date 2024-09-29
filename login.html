@@ -1,6 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PawPal - Log In</title>
+
     <!-- Font: Palanquin -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,7 +15,7 @@
     <!-- Link to External CSS -->
     <link rel="stylesheet" href="pawpal.css" />
 
-    <!-- Internal Styles for Chat Box -->
+    <!-- Internal Styles for Chat Box (keep for this specific page) -->
     <style>
         /* Floating Chat Button */
         .chat-button {
@@ -33,10 +39,10 @@
             background-color: #45a049;
         }
 
-        /* Mobile-friendly styling */
+        /* Responsive styling */
         @media only screen and (max-width: 768px) {
             .form-container {
-                width: 90%; /* Form takes more width on smaller screens */
+                width: 90%;
             }
 
             .chat-button {
@@ -50,10 +56,11 @@
     </style>
 </head>
 <body>
+    <!-- Header Section with Fixed Navigation Bar -->
     <div class="header-container">
-        <h1 style="display: inline;">PawPal</h1>
+        <h1>PawPal</h1>
         
-        <!-- Centered navigation with green buttons -->
+        <!-- Navigation Bar -->
         <nav>
             <a href="pawpal.html">Home</a>
             <a href="howitworks.html">How It Works</a>
@@ -63,6 +70,7 @@
         <a href="login.html" class="button login">Log In</a>
     </div>
 
+    <!-- Log In Form -->
     <h2 style="text-align: center;">Log In</h2>
     <div class="form-container">
         <form method="get" action="#">
@@ -76,12 +84,10 @@
                 <input type="password" id="password" />
             </div>
 
-            <!-- Log In Button -->
             <div class="form-element">
                 <input type="submit" value="Log In" class="login-button">
             </div>
 
-            <!-- Sign Up Text -->
             <div class="signup-text">
                 Don't have an account? <a href="signup.html">Sign Up</a>
             </div>

@@ -1,0 +1,365 @@
+/* 
+
+
+GLOBAL
+STYLES
+
+
+*/
+/* Body Font: Palanquin */
+body {
+  font-family: 'Palanquin', sans-serif;
+  padding-top: 80px;
+
+}
+
+/* Header Font */
+h1 {
+  font-family: 'Palanquin', sans-serif;
+}
+
+/* Base Styles for PawPal */
+h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+/* Button Styles */
+.button {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  background-color: #4CAF50;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.button.login {
+  font-size: 16px;
+  padding: 10px 30px;
+  border-radius: 50px;
+  background-color: #4CAF50;
+  color: #FFFFFF;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Flex Containers */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;          
+  width: 100%;     
+  background-color: #FFFFFF;  
+  z-index: 1000;    
+  padding: 10px 0;  
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* 
+
+
+NAVIGATION
+
+
+*/
+
+/* Navigation Bar Base Style */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #4CAF50;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 50px;
+}
+
+nav a:hover {
+  color: #378b3c;
+}
+
+
+/*
+
+
+BANNER SECTION
+
+
+*/
+.banner {
+  background-image: url('dogwalking.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.banner-text {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px 100px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.banner h2 {
+  color: black;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.banner .button {
+  background-color: #4CAF50;
+  color: #FFFFFF;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 16px;
+}
+
+.banner .button:hover {
+  background-color: #45a049;
+}
+/*
+
+
+FORM STYLING
+
+
+*/
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  min-height: 250px; 
+}
+
+.form-element {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+label {
+  width: 100px;
+  margin-right: 10px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  text-align: center;
+}
+
+.login-button:hover {
+  background-color: #218838;
+}
+
+
+/*
+
+
+TABLE & LIST STYLING
+
+
+*/
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+.walking-routes, .walking-times {
+  flex: 1;
+  margin: 20px;
+}
+
+.walking-times {
+  margin-left: 40px;
+}
+
+.description-section {
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.description-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.description-section h3 {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: #2c3e50;
+}
+
+.description-section p {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+.description-section ul {
+  margin-top: 20px;
+}
+
+.description-section ul li {
+  margin-bottom: 10px;
+}
+
+/*
+
+
+RESPONSIVE SCREENS
+
+
+*/
+
+/* Navigation and Button Responsive Styles */
+@media only screen and (max-width: 1024px) {
+  nav a {
+      font-size: 14px;
+      padding: 8px 12px;
+  }
+
+  h1 {
+      font-size: 30px;
+  }
+
+  .button.login {
+      font-size: 14px;
+      padding: 8px 25px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav a {
+      font-size: 12px;
+      padding: 6px 10px;
+  }
+
+  h1 {
+      font-size: 24px;
+  }
+
+  .button.login {
+      font-size: 12px;
+      padding: 6px 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  nav a {
+      font-size: 10px;
+      padding: 4px 8px;
+  }
+
+  h1 {
+      font-size: 20px;
+  }
+
+  .button.login {
+      font-size: 10px;
+      padding: 4px 15px;
+  }
+}
+
+/* Flex Container for Walking Routes and Times */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 768px) {
+  .flex-container {
+    flex-direction: column; 
+  }
+
+  .walking-routes, .walking-times {
+    margin: 0 0 20px 0; 
+    width: 100%;
+  }
+
+  .walking-times {
+    margin-top: 20px;
+  }
+}
+
+
+/*
+
+
+MISCELLANEOUS STYLES
+
+
+*/
+.spacer {
+  margin-top: 140px;
+}
+
+/* Contact Section */
+.contact-container {
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.contact-container form {
+  margin-bottom: 20px;
+}
+
+/* Login Section */
+.login-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}

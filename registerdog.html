@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Font: Palanquin -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="pawpal.css" />
+
+    <!-- Internal Styles for Chat Box -->
+    <style>
+        /* Floating Chat Button */
+        .chat-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #4CAF50;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .chat-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <h1 style="display: inline;">PawPal</h1>
+        
+        <!-- Centered navigation with green buttons -->
+        <nav>
+            <a href="pawpal.html">Home</a>
+            <a href="howitworks.html">How It Works</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+
+        <a href="login.html" class="button login">Log In</a>
+    </div>
+
+    <!-- Floating Chat Button -->
+    <div class="chat-button" onclick="toggleChat()">
+      💬
+  </div>
+</body>
+
+    <!-- Internal Styles for Form Centering -->
+    <style>
+        /* Center the form using Flexbox */
+        .register-dog-section {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            min-height: 100vh; /* Full height of the viewport */
+        }
+
+        /* Form container styling */
+        .register-dog-form {
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating effect */
+            width: 100%;
+            max-width: 600px; /* Limit form width */
+        }
+        /* Center the header text "Register Your Dog" */
+        .register-dog-title {
+            text-align: center; /* Center the text horizontally */
+        }
+        /* Form labels and inputs styling */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input, .form-group select, .form-group button {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .form-group button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+
+        .checkbox-group input {
+            width: auto;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Content for the Register Your Dog Form -->
+    <h2 class="register-dog-title">Register Your Dog</h2>
+
+
+            <!-- Basic Dog Information -->
+    <div class="register-dog-section">
+        <form action="#" method="post" class="register-dog-form">
+        
+            <div class="form-group">
+                <label for="dog-name">Dog Name:</label>
+                <input type="text" id="dog-name" name="dog_name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="dog-age">Dog Age:</label>
+                <input type="number" id="dog-age" name="dog_age" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="breed">Breed:</label>
+                <input type="text" id="breed" name="dog_breed" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Dog Size:</label>
+                <select name="dog_size" required>
+                    <option value="small">Small (up to 20 lbs)</option>
+                    <option value="medium">Medium (20-50 lbs)</option>
+                    <option value="large">Large (50+ lbs)</option>
+                </select>
+            </div>
+
+            <!-- Temperament & Behavior -->
+            <div class="form-group">
+                <label>Temperament:</label>
+                <select name="dog_temperament" required>
+                    <option value="friendly">Friendly</option>
+                    <option value="calm">Calm</option>
+                    <option value="energetic">Energetic</option>
+                    <option value="shy">Shy</option>
+                </select>
+            </div>
+            
+
+            <!-- Walking Preferences -->
+            <div class="form-group">
+                <label>Duration:</label>
+                <select name="walk_duration" required>
+                    <option value="15-30">15-30 minutes</option>
+                    <option value="30-60">30-60 minutes</option>
+                    <option value="60+">Over 60 minutes</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>Pace:</label>
+                <select name="walk_pace" required>
+                    <option value="slow">Slow</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="fast">Fast</option>
+                </select>
+            </div>
+            
+            <div class="form-group checkbox-group">
+                <label> Time:</label>
+                <div>
+                    <input type="checkbox" name="walk_time" value="morning"> Morning<br>
+                    <input type="checkbox" name="walk_time" value="afternoon"> Afternoon<br>
+                    <input type="checkbox" name="walk_time" value="evening"> Evening<br>
+                </div>
+            </div>
+            
+            
+            <!-- Upload Dog Photo -->
+            <div class="form-group">
+                <label for="dog-photo">Photo:</label>
+                <input type="file" id="dog-photo" name="dog_photo" accept="image/*">
+            </div>
+
+            <!-- Submit -->
+            <div class="form-group">
+                <button type="submit" class="register-button">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

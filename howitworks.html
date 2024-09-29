@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Font: Palanquin -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="pawpal.css" />
+
+    <!-- Internal Styles for Image -->
+    <style>
+        /* Image styling */
+        .howitworks-section img {
+            display: block;
+            margin: 0 auto 20px auto; /* Center the image and add space below */
+            max-width: 100%; /* Ensure the image scales with the container */
+            height: auto; /* Keep the aspect ratio */
+            border-radius: 10px; /* Optional: Adds rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for a floating effect */
+        }
+
+        /* Ensure the .description-section stays consistent */
+        .description-section {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            line-height: 1.6;
+        }
+    </style>
+       <!-- Internal Styles for Chat Box -->
+       <style>
+        /* Floating Chat Button */
+        .chat-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #4CAF50;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .chat-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <h1 style="display: inline;">PawPal</h1>
+        
+        <!-- Centered navigation with green buttons -->
+        <nav>
+            <a href="pawpal.html">Home</a>
+            <a href="howitworks.html">How It Works</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+
+        <a href="login.html" class="button login">Log In</a>
+    </div>
+
+    <div class="howitworks-section">
+        <h2 style="text-align: center;">How It Works</h2>
+
+        <!-- Add the image here -->
+        <img src="dogwalk2.jpg" alt="Dog Walking with PawPal">
+
+
+    <!-- Floating Chat Button -->
+    <div class="chat-button" onclick="toggleChat()">
+      💬
+  </div>
+
+    </div>
+
+    <div class="description-section">
+        <h3>1. Sign Up & Create a Profile</h3>
+        <p>
+            Users start by signing up for PawPal with a simple registration process. You will provide basic information, including your name, email, and location.
+            Next, you will create a profile for yourself and your dog. This includes important details such as your dogs breed, age, temperament, and walking preferences (distance, pace, time of day).
+        </p>
+
+        <h3>2. Set Your Preferences</h3>
+        <p>
+            You can set preferences for what kind of walking partner you are looking for. For instance, you might want a walking buddy with a dog of similar size, or you may prefer walks at a certain time of day or in a specific neighborhood.
+            You can also decide whether you want to join group walks or meet with one person at a time.
+        </p>
+
+        <h3>3. Match with Dog Owners</h3>
+        <p>
+            PawPal uses a matching system similar to apps like Tinder. You will be shown nearby dog owners who fit your preferences, and you can swipe right if you're interested or left if not.
+            If both parties swipe right, it is a match! You will be able to message the other dog owner to plan your walk.
+        </p>
+
+        <h3>4. Plan & Schedule Walks</h3>
+        <p>
+            Once you have matched, you can schedule a walk at a time that works for both you and your new walking buddy. PawPal offers a built-in calendar to help plan these walks.
+            The app can suggest popular walking routes in your area, or you can choose your favorite park or path.
+        </p>
+
+        <h3>5. Track Your Walks</h3>
+        <p>
+            When you're on your walk, you can use the PawPal GPS tracking feature to record your route. You can also save and share your favorite walking paths with others.
+            The tracking ensures that your walks are not only fun but also keep your dog healthy by tracking the distance and time walked.
+        </p>
+
+        <h3>6. Review and Rate</h3>
+        <p>
+            After a walk, you can rate your walking partner and provide feedback. This helps the community stay safe and find reliable walking partners.
+            You can also mark certain users as “favorites” to easily schedule future walks with them.
+        </p>
+
+        <h3>7. Join Group Walks or Events</h3>
+        <p>
+            PawPal also hosts group walks and dog-friendly events where you can meet more local dog owners. You can check the event calendar for upcoming group activities in your area.
+        </p>
+
+        <h3>Benefits of PawPal</h3>
+        <ul>
+            <li><strong>Socialization</strong>: Not only do dogs get the exercise they need, but they also socialize with other dogs, which can improve their behavior and happiness.</li>
+            <li><strong>Community Building</strong>: PawPal helps dog owners build a network of like-minded individuals, making walking a social activity.</li>
+            <li><strong>Safety</strong>: The app includes rating systems and encourages safe walking practices. You can choose to walk with people you trust.</li>
+            <li><strong>Health & Fun</strong>: With the GPS tracking feature, you can track your progress and ensure your dog gets the right amount of exercise.</li>
+        </ul>
+    </div>
+
+</body>
+</html>

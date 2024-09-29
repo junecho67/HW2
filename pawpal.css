@@ -1,16 +1,9 @@
-/* 
+/* GLOBAL STYLES */
 
-
-GLOBAL
-STYLES
-
-
-*/
 /* Body Font: Palanquin */
 body {
   font-family: 'Palanquin', sans-serif;
   padding-top: 80px;
-
 }
 
 /* Header Font */
@@ -72,15 +65,7 @@ h1 {
   justify-content: space-between;
 }
 
-
-/* 
-
-
-NAVIGATION
-
-
-*/
-
+/* NAVIGATION */
 /* Navigation Bar Base Style */
 nav {
   display: flex;
@@ -100,14 +85,7 @@ nav a:hover {
   color: #378b3c;
 }
 
-
-/*
-
-
-BANNER SECTION
-
-
-*/
+/* BANNER SECTION */
 .banner {
   background-image: url('dogwalking.jpg');
   background-size: cover;
@@ -145,13 +123,30 @@ BANNER SECTION
 .banner .button:hover {
   background-color: #45a049;
 }
-/*
 
+/* RESPONSIVE STYLING FOR BUTTONS */
+@media only screen and (max-width: 1024px) {
+  .banner .button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
 
-FORM STYLING
+@media only screen and (max-width: 768px) {
+  .banner .button {
+    font-size: 12px;
+    padding: 8px 18px;
+  }
+}
 
+@media only screen and (max-width: 480px) {
+  .banner .button {
+    font-size: 10px;
+    padding: 6px 15px;
+  }
+}
 
-*/
+/* FORM STYLING */
 .form-container {
   width: 100%;
   max-width: 400px;
@@ -159,7 +154,7 @@ FORM STYLING
   padding: 20px;
   background-color: #f4f4f4;
   border-radius: 10px;
-  min-height: 250px; 
+  min-height: 250px;
 }
 
 .form-element {
@@ -198,14 +193,7 @@ input[type="text"], input[type="password"] {
   background-color: #218838;
 }
 
-
-/*
-
-
-TABLE & LIST STYLING
-
-
-*/
+/* TABLE & LIST STYLING */
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
@@ -253,60 +241,52 @@ table, th, td {
   margin-bottom: 10px;
 }
 
-/*
-
-
-RESPONSIVE SCREENS
-
-
-*/
-
-/* Navigation and Button Responsive Styles */
+/* RESPONSIVE SCREENS */
 @media only screen and (max-width: 1024px) {
   nav a {
-      font-size: 14px;
-      padding: 8px 12px;
+    font-size: 14px;
+    padding: 8px 12px;
   }
 
   h1 {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   .button.login {
-      font-size: 14px;
-      padding: 8px 25px;
+    font-size: 14px;
+    padding: 8px 25px;
   }
 }
 
 @media only screen and (max-width: 768px) {
   nav a {
-      font-size: 12px;
-      padding: 6px 10px;
+    font-size: 12px;
+    padding: 6px 10px;
   }
 
   h1 {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .button.login {
-      font-size: 12px;
-      padding: 6px 20px;
+    font-size: 12px;
+    padding: 6px 20px;
   }
 }
 
 @media only screen and (max-width: 480px) {
   nav a {
-      font-size: 10px;
-      padding: 4px 8px;
+    font-size: 10px;
+    padding: 4px 8px;
   }
 
   h1 {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .button.login {
-      font-size: 10px;
-      padding: 4px 15px;
+    font-size: 10px;
+    padding: 4px 15px;
   }
 }
 
@@ -332,14 +312,7 @@ RESPONSIVE SCREENS
   }
 }
 
-
-/*
-
-
-MISCELLANEOUS STYLES
-
-
-*/
+/* MISCELLANEOUS STYLES */
 .spacer {
   margin-top: 140px;
 }

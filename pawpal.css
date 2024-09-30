@@ -55,7 +55,7 @@ h1 {
 .login-button {
   width: 100%;
   padding: 12px;
-  background-color: #4CAF50; /* Same green as other buttons */
+  background-color: #4CAF50;
   color: #FFFFFF;
   border: none;
   border-radius: 5px;
@@ -66,7 +66,7 @@ h1 {
 }
 
 .login-button:hover {
-  background-color: #45a049; /* Apply same hover effect */
+  background-color: #45a049;
 }
 
 /* Flex Containers */
@@ -294,28 +294,6 @@ table, th, td {
   .button.login {
     font-size: 10px;
     padding: 4px 15px;
-  }
-}
-
-/* Flex Container for Walking Routes and Times */
-.flex-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-@media only screen and (max-width: 768px) {
-  .flex-container {
-    flex-direction: column; 
-  }
-
-  .walking-routes, .walking-times {
-    margin: 0 0 20px 0; 
-    width: 100%;
-  }
-
-  .walking-times {
-    margin-top: 20px;
   }
 }
 
